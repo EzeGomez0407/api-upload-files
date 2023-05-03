@@ -17,6 +17,6 @@ app.use(express.static("public/file"));
 
 app.use("/", routes);
 
-app.listen(PORT, () => {
+app.listen(PORT || 3002, () => {
   console.log(`server on port ${PORT}`);
 });
