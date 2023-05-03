@@ -1,8 +1,8 @@
 module.exports = {
   ROUTES: {
-    IMG: "./public/img",
-    VIDEO: "./public/video",
-    FILE: "./public/file",
+    IMG: "./upload/img",
+    VIDEO: "./upload/video",
+    FILE: "./upload/file",
   },
   TYPES: {
     IMG: "image",
