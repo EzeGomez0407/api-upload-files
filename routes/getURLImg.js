@@ -8,7 +8,7 @@ const router = Router();
 // para dejar todo más limpio cree esta funcion que crea y prepara la configuración para el middleware
 const upload = configStorage(TYPES.IMG);
 
-router.post("/img", upload.single(TYPES.IMG), (req, res) => {
+router.post("/image", upload.single(TYPES.IMG), (req, res) => {
   // Se obtiene el nombre del archivo guardado y se construye la URL
   const fileName = req.file.filename;
   const url = `${req.protocol}://${req.get("host")}/${fileName}`;
